@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="quiz-container">
+    <div class="progress">Question <span id="q-number">1</span>/5</div>
+
+    <h2 id="question">Question text</h2>
+
+    <div class="options">
+      <div class="option" onclick="selectOption(0)"></div>
+      <div class="option" onclick="selectOption(1)"></div>
+      <div class="option" onclick="selectOption(2)"></div>
+      <div class="option" onclick="selectOption(3)"></div>
+    </div>
+
+    <button id="nextBtn" onclick="nextQuestion()">Next</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
